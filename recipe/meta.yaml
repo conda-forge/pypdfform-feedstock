@@ -1,5 +1,5 @@
 {% set name = "PyPDFForm" %}
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/chinapandaman/PyPDFForm/archive/v{{ version }}.tar.gz
-  sha256: edf0a51a9ba7032fe98b5044ff8b0ce005d0ea5c532b06a32721f10c42b4f1bd
+  sha256: 950b33ce0fcd31846ccc3b1a7c5117ec01932da98437f40c6ed416ba81af748c
 
 build:
   noarch: python
