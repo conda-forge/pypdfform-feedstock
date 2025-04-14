@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: PyPDFForm
+  version: 2.1.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/chinapandaman/PyPDFForm/archive/v${{ version }}.tar.gz
+  sha256: e68b636ad9634e310267d49f078049244fbc1fbe49b8c4c2d503e745a34d0e48
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - cryptography
+    - pillow
+    - pypdf
+    - reportlab
+
+tests:
+  - python:
+      imports:
+        - PyPDFForm
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: The Python library for PDF forms.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/chinapandaman/PyPDFForm
+
+extra:
+  recipe-maintainers:
+    - thewchan
