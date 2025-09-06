@@ -25,6 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cryptography
+    - fonttools
     - pillow
     - pypdf
     - reportlab
