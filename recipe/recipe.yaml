@@ -26,6 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - cryptography
     - fonttools
+    - pikepdf
     - pillow
     - pypdf
     - reportlab
