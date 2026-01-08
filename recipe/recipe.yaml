@@ -24,12 +24,12 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - cryptography
-    - fonttools
-    - pikepdf
-    - pillow
-    - pypdf
-    - reportlab
+    - cryptography >=46.0.3,<47.0.0
+    - fonttools >=4.60.1,<5.0.0
+    - pikepdf >=10.0.2,<11.0.0
+    - pillow >=12.0.0,<13.0.0
+    - pypdf >=6.3.0,<7.0.0
+    - reportlab >=4.4.6,<5.0.0
 
 tests:
   - python:
