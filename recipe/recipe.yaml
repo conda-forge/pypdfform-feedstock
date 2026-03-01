@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: PyPDFForm
-  version: "4.7.0"
+  version: "4.7.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/chinapandaman/PyPDFForm/archive/v${{ version }}.tar.gz
-  sha256: 99bfb1886dcddc6997e5c9fd55cd9981ea456f1fcda75dcf1f509407d4ce5632
+  sha256: 5603a88f2e25ba75c0d02b43c4e569131da983ad89ce1b150c206da8e8a87992
 
 build:
   number: 0
