@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: PyPDFForm
-  version: "4.7.5"
+  version: "4.7.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/chinapandaman/PyPDFForm/archive/v${{ version }}.tar.gz
-  sha256: 32f75e7b39087fadd6c55a2781845c274b3442cfde03b769c03b23f0780fd54e
+  sha256: c5327045b7026567eb7b203d83af3420eebb21e6b1aa926863d54c54d89a99c8
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - fonttools >=4.60.1,<5.0.0
     - pikepdf >=10.5.0,<11.0.0
     - pillow >=12.0.0,<13.0.0
-    - pypdf >=6.3.0,<7.0.0
+    - pypdf >=6.9.0,<7.0.0
     - reportlab >=4.4.6,<5.0.0
 
 tests:
@@ -36,7 +36,9 @@ tests:
       imports:
         - PyPDFForm
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: The Python library for PDF forms.
