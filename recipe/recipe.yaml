@@ -13,7 +13,7 @@ source:
   sha256: 49acf59b882de91f4e1b1fc301d15bb4280572d014e6a402b0c9192a1898ec2d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,12 +24,12 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - fonttools >=4.62.1,<5.0.0
+    - fonttools >=4.63.0,<5.0.0
     - pikepdf >=10.5.1,<11.0.0
     - pillow >=12.2.0,<13.0.0
     - pypdf >=6.11.0,<7.0.0
     - cryptography >=48.0.0,<49.0.0
-    - reportlab >=4.5.0,<5.0.0
+    - reportlab >=4.5.1,<5.0.0
 
 tests:
   - python:
