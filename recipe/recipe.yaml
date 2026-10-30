@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: PyPDFForm
-  version: "6.0.1"
+  version: "6.0.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/chinapandaman/PyPDFForm/archive/v${{ version }}.tar.gz
-  sha256: 2ca369a859583ec43abcf9900c035acef61e6297240817b276ba50cf53e14d30
+  sha256: 71101a7122c4e072724df18df012186d10646ac78f55930390c834c3fd63e6cc
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - fonttools >=4.63.0,<5.0.0
     - pikepdf >=10.7.2,<11.0.0
-    - pillow >=12.2.0,<13.0.0
+    - pillow >=12.2.0,<14.0.0
     - pypdf >=6.12.2,<7.0.0
     - cryptography >=50.0.0,<51.0.0
     - reportlab >=4.5.1,<6.0.0
